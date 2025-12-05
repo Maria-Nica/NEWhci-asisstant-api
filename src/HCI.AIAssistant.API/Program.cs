@@ -34,6 +34,7 @@ builder.Services.AddSingleton<IAppConfigurationsService>(
     provider => provider.GetRequiredService<IOptions<AppConfigurationsService>>().Value
 );
 builder.Services.AddSingleton<IParametricFunctions, ParametricFunctions>();
+builder.Services.AddSingleton<IAIAssistantService, AIAssistantService>();
 
 // Add services to the container.
 
